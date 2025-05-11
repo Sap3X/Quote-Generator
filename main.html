@@ -9,11 +9,30 @@
     <title>Quote Generator</title>
 </head>
 <body>
-    <img src="assets/moon-regular.png" alt="ing">
+    <img src="assets/moon-solid.png" alt="ing">
+
     <div class="box">
         <h1>Quote Generator</h1>
-        <p id="quote"></p>
-        <button id="generate-quote">Generate Quote</button>
+        <p id="quote">Error 404</p>
+       
+        <div class="btn">
+            <button id="previous">Previous</button>
+            <button id="next">Next</button>
+        </div>
     </div>
+
+    <script>
+        const quote=document.getElementById("quote");
+        const api_url = "https://thequoteshub.com/api/";
+        
+        async function getquote(url) {
+            const response = await fetch(url);
+            var data = await response.json();
+            console.log(data);
+            quote.innerHTML = data.text;
+        }
+
+        getquote(api_url);
+    </script>
 </body>
 </html>
