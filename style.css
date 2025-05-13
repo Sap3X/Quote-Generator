@@ -1,32 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --tertiary-color: rgb(76, 72, 72);
+    --unique-color: #a9a2a2;
+    --font-family: 'Poppins', sans-serif;
+}
+
+.dark-mode{
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --tertiary-color: rgb(76, 72, 72);
+    --unique-color: #a9a2a2;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
     font-style: normal;
 
 }
 
 body{
-    background-color: white;
+    background-color: var(--primary-color);
 }
 
-.option{
+.opt{
     position: absolute;
     top: 2%;
-    left: 93%;
+    left: 88%;
     cursor: pointer;
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
     gap: 20px;
 }
 
+.opt select{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 25px;
+    border: 1px solid var(--secondary-color);
+    width: 150px;
+    height: 50px; 
+    cursor: pointer;
+    padding-left: 35px;
+
+}
+
+.opt select::after{
+    background-color: var(--primary-color);
+}
+
+.opt select:hover{
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    transition: 0.3s;
+}
+
+.opt select option{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.opt #switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--unique-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+#switch img{
+    fill: var(--primary-color);
+}
+
+#switch img:last-child{
+    display: none;
+}
+
+.dark-mode #switch img:first-child{
+    display: none;
+}
+
+.dark-mode #switch img:last-child{
+    display: block;
+}
+
 .box{
-    background-color: black;
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     width: 700px;
     position: absolute;
     top: 50%;
@@ -49,7 +121,7 @@ body{
     width: 75px;
     height: 3px;
     border-radius: 3px;
-    background: white;
+    background: var(--primary-color);
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -83,17 +155,17 @@ body{
     content: '';
     width: 20px;
     height: 2px;
-    background: white;
+    background: var(--primary-color);
     position: absolute;
     top: 50%;
     left: -30px;
 }
 
 .box button{
-    background-color: white;
-    color: black;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 25px;
-    border: 1px solid black;
+    border: 1px solid var(--secondary-color);
     width: 150px;
     height: 50px;
     display: flex;
@@ -101,4 +173,10 @@ body{
     justify-content: center;
     margin: 5px;
     cursor: pointer;
+}
+
+.box button:hover{
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    transition: 0.3s;
 }
