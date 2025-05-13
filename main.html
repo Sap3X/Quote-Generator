@@ -62,11 +62,18 @@
         async function api_call_Pre_nex() {
             const response = await fetch("https://thequoteshub.com/api/tags/" + select.value);
             var data = await response.json();
-            quote.innerHTML = data.quotes[0+count].text;
-            author.innerHTML = data.quotes[0+count].author;
+            quote.innerHTML = data.quotes[count].text;
+            author.innerHTML = data.quotes[count].author;
         }
         api_call_Pre_nex();
-
+       
+        async function random() {
+            const response = await fetch("https://thequoteshub.com/api/tags/" + select.value);
+            var data = await response.json();
+            count = Math.floor(Math.random() * data.quotes.length);
+            quote.innerHTML = data.quotes[count].text;
+            author.innerHTML = data.quotes[count].author;
+        }
         select.addEventListener("change", function() {
             count = 0;
             api_call_Pre_nex();
