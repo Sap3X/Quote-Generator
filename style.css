@@ -14,11 +14,14 @@ body{
     background-color: white;
 }
 
-img{
+.option{
     position: absolute;
     top: 2%;
-    left: 98%;
+    left: 93%;
     cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
 }
 
 .box{
@@ -67,6 +70,23 @@ img{
     margin-top: 50px;
     display: flex;
     justify-content: center;
+}
+
+.box span{
+    display: block;
+    margin: 10px;
+    float: right;
+    position: relative;
+}
+
+.box span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: -30px;
 }
 
 .box button{
