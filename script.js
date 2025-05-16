@@ -64,4 +64,3 @@ select.addEventListener("change", function() {
     count = 0;
     api_call_Pre_nex();
 });
-
