@@ -68,8 +68,8 @@ body{
 }
 
 .opt #switch{
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    aspect-ratio: 1/1;
     padding: 0;
     border-radius: 50%;
     background-color: var(--unique-color);
@@ -183,26 +183,24 @@ body{
 
 @media screen and (max-width: 768px){
     .box{
-        width: 90%;
+        width: 60%;
         padding: 20px;
+        h1{
+            font-size: 15px;
+        }
+
+        p{
+            font-size: 10px;
+        }
+
+        #author{
+            font-size: 8px;
+        }
     }
 
-    .box h1{
-        font-size: 24px;
-    }
+    .opt button select {
+        height: 20px;
 
-    .box p{
-        font-size: 20px;
-    }
-
-    .opt select{
-        width: 100px;
-        height: 40px; 
-    }
-
-    .opt #switch{
-        height: 40px;
-        width: 40px;
     }
 
     .box button{
