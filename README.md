@@ -1,4 +1,4 @@
-# Watch the output of my project
+# Checkout the Output
 https://sap3x-quotegenerator.netlify.app/
 
 # Quote-Generator
