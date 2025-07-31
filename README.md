@@ -22,6 +22,6 @@ My Second project as an individual. This generates quote in 3 topics(love, life,
 
 # How to Use
 1. Clone the repo using
-   git clone <repo Url>
-2. Download Live preview from VS code and run   ///If you have Vscode
+   git clone {repo Url}
+2. Download Live preview from VS code and run <"         ">     //If you have Vscode
    Else Open index.html in browser
