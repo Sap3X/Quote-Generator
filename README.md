@@ -21,7 +21,7 @@ My Second project as an individual. This generates quote in 3 topics(love, life,
 2. How to revert colors (Day/Night)
 
 # How to Use
-1. Clone the repo using
+1. Clone the repo using <br>
    git clone {repo Url}
-2. Download Live preview from VS code and run <"         ">     //If you have Vscode
+2. Download Live preview from VS code and run &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //If you have Vscode <br>
    Else Open index.html in browser
