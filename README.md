@@ -17,11 +17,12 @@ My Second project as an individual. This generates quote in 3 topics(love, life,
 3. Vanila JS
 
 # What I Learn 
-1. Api Intregation
-2. How to revert colors (Day/Night)
+1. **Api Intregation**
+2. **How to revert colors (Day/Night)**
 
 # How to Use
-1. Clone the repo using <br>
-   git clone {repo Url}
-2. Download Live preview from VS code and run &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //If you have Vscode <br>
-   Else Open index.html in browser
+1. **Clone the repo:**
+
+```bash
+git clone https://github.com/Sap3X/Sticky-notes.git
+cd Sticky-notes
